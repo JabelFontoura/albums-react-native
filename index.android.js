@@ -1,11 +1,11 @@
 
 //Impoort library to help create Component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
 //Create component
 const App = () => (
-    <Text>Some Text</Text>
+  <Header headerText={'Albums'}/>
   );
 
 //Render to device
