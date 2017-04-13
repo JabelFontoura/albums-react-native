@@ -8,13 +8,6 @@ import EmployeeCreate from './components/EmployeeCreate';
 const RouterComponent = () => {
   return (
     <Router sceneStyle={{ paddingTop: (Platform.OS === 'ios') ? 65 : 55 }}>
-      <Scene key="auth">
-        <Scene
-          key="login"
-          component={LoginForm}
-          title="Please Login"
-        />
-      </Scene>
       <Scene key="main">
         <Scene
           key="employeeList"
@@ -29,6 +22,13 @@ const RouterComponent = () => {
           component={EmployeeCreate}
           title="Create Employee"
         />
+      </Scene>
+      <Scene key="auth">
+      <Scene
+      key="login"
+      component={LoginForm}
+      title="Please Login"
+      />
       </Scene>
     </Router>
   );
